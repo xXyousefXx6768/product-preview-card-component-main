@@ -1,0 +1,142 @@
+      /******reset*******/
+      *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+
+     /***** general*****/
+     :root{
+     --Dark-cyan:hsl(158, 36%, 37%);
+     --Cream:hsl(30, 38%, 92%);
+     --Very-dark-blue:hsl(212, 21%, 14%);
+     --Dark-grayish-blue:hsl(228, 12%, 48%);
+     --White:hsl(0, 0%, 100%);
+     }
+     
+        @font-face {
+            src: url(../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+            font-weight: 700;
+            font-family:Fraunces;
+     }
+     
+     @font-face {
+        src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+        font-weight: 500;
+        font-family:Montserrat;
+     }
+     body {
+        background-color: var(--Cream);
+        min-height: 100vh;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: var(--Dark-grayish-blue);
+    }
+    
+    h1 {
+        font-family: "Fraunces";
+        color: var(--Very-dark-blue);
+        font-size: 2rem;
+    }
+    
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    section {
+        background-color: var(--White);
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        width: 600px;
+    }
+    
+    img {
+     flex: 1 0 50%;
+     object-fit: cover;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+    }
+    
+    .category{
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    .product{
+        background-color: var(--White);
+        padding: 35px;
+    }
+    
+    .prices {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .sale-price {
+        color: var(--Dark-cyan);
+        font-family: "Fraunces";
+        font-size: 1.7rem;
+        margin-right: 20px;
+    }
+    
+    .list-price {
+        text-decoration: line-through;
+    }
+    
+    a{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        background-color: var(--Dark-cyan);
+        color:var(--White);
+        padding: 16px 61px;
+        border-style: none;
+        border-radius: 10px;
+        height: 50px;
+        width: 100%;
+    }
+    
+    a:hover {
+        background-color:var(--Dark-cyan);
+    }
+    
+    a:active {
+        background-color:var(--Dark-cyan) ;
+    }
+    
+    a{
+        margin-right: 10px;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+        section {
+            flex-direction: column;
+            width: 400px;
+        }
+    
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        .prices {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+           }
+      }
